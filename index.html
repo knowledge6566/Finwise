@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free personal finance calculators for EMI, SIP, GST, income tax, FD, RD and loan eligibility.">
+  <title>FinWise — Personal Finance Calculators</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">₹</span><span>Fin<span class="brand-accent">Wise</span></span></a>
+  <nav><a href="#calculators">Calculators</a><a href="#about">About</a></nav>
+  <a class="top-cta" href="#calculators">Start calculating <span>↗</span></a>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR MONEY, MADE CLEAR</div>
+      <h1>Make smarter<br><span>money moves.</span></h1>
+      <p>Simple, useful calculators to plan loans, savings, taxes and everyday finances — all in one place.</p>
+      <a class="hero-button" href="#calculators">Explore calculators <span>↓</span></a>
+      <div class="hero-note"><span class="note-icon">✓</span> Free to use · No sign-up · Calculations in your browser</div>
+    </div>
+    <div class="hero-art">
+      <div class="art-glow"></div>
+      <div class="money-card card-back"><span>INVESTMENT GROWTH</span><strong>+12.8%</strong><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="money-card card-front"><div class="card-top"><span>YOUR FINANCIAL SNAPSHOT</span><b>•••</b></div><small>Projected savings</small><strong class="big-money">₹8,45,200</strong><div class="trend"><span>↗ 8.4%</span> <small>potential annual growth</small></div><svg viewBox="0 0 330 95" role="img" aria-label="Illustrative rising savings graph"><path d="M0 77 C35 70 37 48 70 58 S112 70 139 43 S180 58 207 30 S255 48 280 19 S311 17 330 4" fill="none" stroke="#b8f36b" stroke-width="3" stroke-linecap="round"/><path d="M0 77 C35 70 37 48 70 58 S112 70 139 43 S180 58 207 30 S255 48 280 19 S311 17 330 4 L330 95 L0 95Z" fill="url(#area)" opacity=".17"/><defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#b8f36b"/><stop offset="1" stop-color="#b8f36b" stop-opacity="0"/></linearGradient></defs></svg><div class="chart-labels"><span>JAN</span><span>MAR</span><span>MAY</span><span>JUL</span><span>SEP</span><span>DEC</span></div></div>
+      <div class="floating-chip"><span>₹</span> Plan with confidence</div>
+    </div>
+  </section>
+  <section class="trust-strip"><div><b>6</b><span>essential calculators</span></div><div><b>100%</b><span>browser-based</span></div><div><b>₹0</b><span>to get started</span></div></section>
+
+  <section class="calculator-section" id="calculators">
+    <div class="section-heading"><div><div class="eyebrow">THE FINWISE TOOLKIT</div><h2>What would you like<br>to calculate?</h2></div><p>Choose a calculator and enter a few details to get a quick estimate.</p></div>
+    <div class="workspace">
+      <aside class="tool-list" aria-label="Calculator types">
+        <button class="tool-tab active" data-tool="emi"><span class="tool-icon blue">⌂</span><span><b>EMI Calculator</b><small>Loan repayment</small></span><i>→</i></button>
+        <button class="tool-tab" data-tool="sip"><span class="tool-icon green">↗</span><span><b>SIP Calculator</b><small>Investment growth</small></span><i>→</i></button>
+        <button class="tool-tab" data-tool="gst"><span class="tool-icon orange">%</span><span><b>GST Calculator</b><small>Tax breakdown</small></span><i>→</i></button>
+        <button class="tool-tab" data-tool="tax"><span class="tool-icon purple">₹</span><span><b>Income Tax</b><small>Tax estimate</small></span><i>→</i></button>
+        <button class="tool-tab" data-tool="fd"><span class="tool-icon yellow">▣</span><span><b>FD Calculator</b><small>Fixed deposit</small></span><i>→</i></button>
+        <button class="tool-tab" data-tool="rd"><span class="tool-icon pink">◷</span><span><b>RD Calculator</b><small>Recurring deposit</small></span><i>→</i></button>
+        <button class="tool-tab" data-tool="eligibility"><span class="tool-icon teal">✓</span><span><b>Loan Eligibility</b><small>Borrowing estimate</small></span><i>→</i></button>
+      </aside>
+      <section class="calc-panel" aria-live="polite">
+        <div id="calculator-content"></div>
+      </section>
+    </div>
+  </section>
+  <section class="disclaimer" id="about"><div class="disclaimer-icon">i</div><div><b>A helpful estimate, not financial advice.</b><p>Results are indicative and may differ from figures provided by banks, lenders, investment platforms or tax professionals. Actual rates, fees, eligibility rules and tax treatment can vary. Verify details before making a financial decision.</p></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">₹</span><span>Fin<span class="brand-accent">Wise</span></span></a><span>Clear calculations. Confident decisions.</span><span>© <span id="year"></span> FinWise</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
